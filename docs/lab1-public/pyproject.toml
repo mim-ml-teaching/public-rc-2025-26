@@ -1,0 +1,9 @@
+[project]
+name = "lab1-public"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mujoco>=3.3.6",
+]
