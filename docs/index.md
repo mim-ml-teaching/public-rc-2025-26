@@ -8,6 +8,10 @@
 
 # Lectures
 
+[Slides & recordings](https://drive.google.com/drive/folders/1SUVL9ZvXpPgyEv7ynwQv-ar3gWSkDnF1?usp=drive_link)
+
+Lecture plan:
+* Oct 8, MC - Transformations & Pinhole camera model
 
 # Additional materials
 
