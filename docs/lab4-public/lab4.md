@@ -22,7 +22,7 @@ during this lab:
 
 Radial distortion causes straight lines to appear curved.
 
-![Radial distortion](https://i.stack.imgur.com/Yusya.png)
+![Radial distortion](https://docs.opencv.org/4.x/distortion_examples.png)
 
 Tangential distortion makes a "tilted" effect.
 
