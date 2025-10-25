@@ -1,8 +1,8 @@
 # Intro
 
 During the lecture we introduced the pinhole camera model.
-In the real world, cameras have lenses. Intuitions about
-how the focal length and aperture influence depth of field were discussed during the bonus lecture; see [this blog post](https://ciechanow.ski/cameras-and-lenses/).
+In the real world, cameras have lenses.
+Intuitions about how the focal length and aperture influence depth are explained at length in the `Additional Materials` section on the [course website](https://mim-ml-teaching.github.io/public-rc-2025-26/), most notably in [this blog post](https://ciechanow.ski/cameras-and-lenses/).
 
 # General info
 

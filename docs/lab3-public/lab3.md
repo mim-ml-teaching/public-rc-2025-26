@@ -11,7 +11,7 @@ Access the Colab notebook: [lab3-colab](https://colab.research.google.com/github
 - [3_right.png](3_right.png)
 
 
-download them from [here](https://github.com/mim-uw/rc-2025-26/tree/master/docs/lab3-public) and upload them to your
+download them from [here](https://github.com/mim-ml-teaching/public-rc-2025-26/tree/main/docs/lab3-public) and upload them to your
 Colab.
 
 
@@ -134,22 +134,22 @@ because it can provide information about the depth of the scene.
 
 ### Depth calculation
 
-![](https://docs.opencv.org/4.1.2/stereo_depth.jpg)
-
-[Image source](https://docs.opencv.org/4.1.2/dd/d53/tutorial_py_depthmap.html)
+![](depth_calculation.png)
 
 Quick explanation:
- - We want to estimate the distance from the blue point to the cameras (pinholes) - we are looking for z
- - there are two cameras with pinhole 1 and pinhole 2 respectively
- - image planes are right behind the pinholes at distance f (focal length) and the blue point is projected onto them in different locations
- - baseline is the distance between cameras
- - if x and x' mark positions of the observed blue point in the image planes, then we define the disparity as (x - x')
- - we can calculate the distance using disparity, baseline and f
+ - We want to estimate the distance from the point `P` to the segment on which cameras are placed (pinholes) - we are looking for `Z`
+ - there are two cameras with `Pinhole 1` and `Pinhole 2` respectively
+ - image planes are right behind the pinholes at distance `f` (focal length), and the point `P` is projected onto them
+ - baseline `B` is the distance between cameras
+ - `x` and `x'` denote the position of a projection **in the respective image plane**, i.e., `O_1` and `O_2` respectively.
+ Hence, in the example in the image above, the value of `x` is negative.
+ - we define the disparity as `(x' - x)`, i.e., the difference in position of the respective projections.
+ - we can calculate the distance using disparity, baseline and `f`
 
-From similar triangles:
-$$
-\texttt{disparity}=x-x^{\prime}=\frac{Bf}{Z}
-$$
+From similar triangles:\
+`B/Z = (x' - x) / f` \
+So:\
+`Z = f * B/(x' - x )`
 
 ### Dense stereo matching
 
