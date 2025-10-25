@@ -69,12 +69,15 @@ class Detector:
         cube_center_world_frame = None
 
         if ids is not None:
-            # Estimate pose of each marker
-            rvecs, tvecs, _ = cv2.aruco.estimatePoseSingleMarkers(corners, 0.2 - 0.04, self.camera_matrix, self.dist_coeffs)
-
-            # Use the first detected marker to determine the distance
-            rvec = rvecs[0]
-            tvec = tvecs[0]
+            # Estimate marker pose
+            marker_size = 0.16
+            objp = np.array([
+                [-marker_size/2, marker_size/2, 0],
+                [marker_size/2, marker_size/2, 0],
+                [marker_size/2, -marker_size/2, 0],
+                [-marker_size/2, -marker_size/2, 0]
+            ], dtype=np.float32)
+            _, rvec, tvec = cv2.solvePnP(objp, corners[0], self.camera_matrix, self.dist_coeffs, flags=cv2.SOLVEPNP_ITERATIVE)
 
             # Convert the rotation vector to a rotation matrix
             rotation_matrix, _ = cv2.Rodrigues(rvec)
