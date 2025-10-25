@@ -1,6 +1,6 @@
 class PID:
     def __init__(
-            self, gain_prop: int, gain_int: int, gain_der: int, sensor_period: float,
+            self, gain_prop: float, gain_int: float, gain_der: float, sensor_period: float,
             output_limits: tuple[float, float]
             ):
         self.gain_prop = gain_prop
