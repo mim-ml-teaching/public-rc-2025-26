@@ -65,7 +65,7 @@ The first step is to calibrate your camera to correct for lens distortion. Lens 
 
 As you remember from the lecture, one of the most important steps in image stitching is projecting all images on a common plane - this allows us to merge them into one picture.
 
-That's why your first task is to write a function that takes an image and a projective transformation matrix, applies the projective transformation to the image, and displays both the original image and the transformed image. To better visualize the effect of the transformation, consider creating a third visualization that overlays the transformed image with transparency onto the original one. This will make the change in perspective more apparent.
+That's why your first task is to write a function that takes an image and a projective transformation matrix, applies the projective transformation to the image, and displays both the original image and the transformed image.
 
 You can implement the function by taking each pixel from the *destination* image and map it to a single pixel in the *source* image (by using the inverse homography).
 It is enough to use a nearest neighbor to find a pixel in the *source* image, it is not required to interpolate between the neighboring pixels.
