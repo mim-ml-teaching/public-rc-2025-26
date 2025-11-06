@@ -7,6 +7,10 @@ The main goals of this lab are to learn:
 - more about MuJoCo
 - how to control a robot from python
 
+In this lab, we also expect you to take care of the environment on your own.
+
+We encourage you to use `uv`, as it's the default package manager for the course, but the choice is yours.
+
 ## Steps
 
 1. Run MuJoCo with a simple robot
@@ -216,7 +220,8 @@ We'll talk about it in more detail later on during the course.
 
 Manually adding cubes to the XML file can be tedious. A better approach is to generate the `robot.xml` file programmatically.
 
-Create a Python script that generates an XML file with four cubes in random positions. The goal is to create a game where the user has to move all the cubes to the center of the board (x=0, y=0).
+Finish the Python script below that generates an XML file with four cubes in random positions.
+The goal is to create a game in which the user has to move all the cubes to the center of the board (x=0, y=0).
 
 Here's a Python snippet to get you started:
 
