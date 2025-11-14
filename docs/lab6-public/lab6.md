@@ -11,6 +11,9 @@ In this lab, we also expect you to take care of the environment on your own.
 
 We encourage you to use `uv`, as it's the default package manager for the course, but the choice is yours.
 
+**Warning:**\
+On MacOS `uv` doesn't work properly with `mujoco.viewer.launch_passive()` used in this lab. If you want to use MacOS for this lab we suggest installing and using [conda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/macos.html) instead. You will also need to launch scripts with `mjpython script.py` instead of `python script.py`.
+
 ## Steps
 
 1. Run MuJoCo with a simple robot
