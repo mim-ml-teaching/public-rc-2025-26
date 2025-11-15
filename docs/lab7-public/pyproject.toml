@@ -1,0 +1,7 @@
+[project]
+name = "lab7-public"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "mujoco>=3.3.7",
+]
