@@ -12,10 +12,30 @@ We begin with linearizing nonlinear systems around their fixed points to build i
 
 # Linearization of non-linear dynamics around fixed points
 
-Find fixed points of the following systems and linearize their dynamics around these fixed points, i.e.:
+Find fixed points of the following systems and linearize their dynamics around these fixed points.
+This effectively means:
 
-- given a system $\dot{x} = f(x)$, find $\overline{x}$ such that $f(\overline{x})=0$ and 
-- formulate approximate dynamics $\dot{\Delta x} = A ⋅ \Delta x$, where $A$ is the matrix you need to find and $\Delta x=x-\overline{x}$.
+#### 1. Finding fixed points
+
+Given a system
+
+$$\dot{x} = f(x)$$
+
+find function arguments such that:
+
+$$f(\overline{x})=0$$
+
+#### 2. Formulating approximate dynamics
+
+Define:
+
+$$\Delta x=x-\overline{x}$$
+
+and find approximate linear dynamics of the system:
+
+$$\Delta \dot{x} = A ⋅ \Delta x$$
+
+(A is the matrix you need to find).
 
 [Notes with solutions and hints](linearization-solutions.pdf).
 
@@ -39,11 +59,9 @@ _Hint_: rewrite the second-order equation as a first-order system before lineari
 
 In the following system you can assume $-\pi \le \theta \le \pi$.
 
-
 $$\dot{r} = r^2 - r$$
 
 $$\dot{\theta} = \sin^2(\theta / 2)$$
-
 
 ## System 4
 
@@ -72,20 +90,29 @@ In the following section we explore:
 
 ## Manual simulation step
 
-Let $x(t)$ be the state of some system.
-If the system evolves according to $\dot{x} = f(x)$ and the timestep is $\Delta t$,
+Let
+
+$$x(t)$$
+
+represent the state of some system.
+If the system evolves according to
+
+$$\dot{x} = f(x)$$
+
 the Forward Euler integration scheme is given by:
 
 $$x_{i+1} = x_i + \Delta t f(x_i)$$
 
+where delta t denotes the timestep.
+
 For System 5 form the part on linearization,
-perform a few simulation steps using the Forward Euler method with a timestep $\Delta t = 0.1$,
+perform a few simulation steps using the Forward Euler method with a timestep `delta_t = 0.1`,
 starting at the fixed points and some other points.
 
-Will the system stay at the fixed points during the simulation?
-Why or why not?
-Does the result depend on the choice of the timestep?
-How does the behaviour at the fixed points compare to that from any other initial state?
+ - Will the system stay at the fixed points during the simulation?
+ - Why or why not?
+ - Does the result depend on the choice of the timestep?
+ - How does the behaviour at the fixed points compare to that from any other initial state?
 
 ## Does this matter in real simulations?
 When we increase the timestep, we speed up the simulation, but we also decrease its accuracy.
