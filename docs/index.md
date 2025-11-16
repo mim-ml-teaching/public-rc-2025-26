@@ -16,7 +16,18 @@
 [Slides & recordings](https://drive.google.com/drive/folders/1SUVL9ZvXpPgyEv7ynwQv-ar3gWSkDnF1?usp=drive_link)
 
 Lecture plan:
-* Oct 8, MC - Transformations & Pinhole camera model
+1. Oct 8, MC - Transformations & Pinhole camera model
+2. Oct 15, MC - Calibration & stereo
+3. Oct 22, MC - Image stitching, epipolar geometry
+4. Oct 29, MW - 3D Scene Reconstruction (COLMAP, NeRF & Gaussian Splatting)
+5. Nov 5, KC - SLAM (next year should be moved after state estimation)
+6. Nov 12, PN - Control Theory (linear systems, linearization, LQR)
+6. Nov 19, PN - Control Theory (linear systems, linearization, LQR)
+6. Nov 26, PN - Control Theory (linear systems, linearization, LQR)
+9. Dec 3, MW, PID
+10. Dec 10, MC, State Estimation
+11. Dec 17, MC, Forward kinematics
+
 
 # Additional materials
 
