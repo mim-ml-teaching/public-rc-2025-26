@@ -15,16 +15,21 @@ Lecture plan:
 2. Oct 15, MC - Calibration & stereo
 3. Oct 22, MC - image stitching, epipole geometry (?)
 4. Oct 29, MW - 3D Scene Reconstruction (COLMAP, NeRF & Gaussian Splatting)
-5. Nov 5, KC - SLAM
+5. Nov 5, KC - SLAM (next year should be moved after state estimation)
 6. Nov 12, PN - Control Theory [linear systems, linearization, LQR]
 7. Nov 19, PN - Control Theory [linear systems, linearization, LQR]
 8. Nov 26, PN - Control Theory [linear systems, linearization, LQR]
-9. Dec 3, State estimation
-10. Dec 10, State Estimation
-11. Dec 17, Forward kinematics
-12. Jan 7, MW: PID + simulation + VLAs
-13. Jan 14, MW: PID + simulation + VLAs
-14. Jan 21, 
+9. Dec 3, MW, PID
+10. Dec 10, MC, State Estimation
+11. Dec 17, MC, Forward kinematics
+12. Jan 7, MW: simulation + VLAs
+13. Jan 14, MW: simulation + VLAs
+14. Jan 21, KC: quadruppeds
+
+Problems:
+* Kalman not enough time? Alpha-beta do before on lab?
+* Drones - where to fit it in?
+* Path planning - RRT & A*.
 
 # Additional materials
 
