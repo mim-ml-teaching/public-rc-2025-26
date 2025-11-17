@@ -24,7 +24,7 @@ Lecture plan:
 6. Nov 12, PN - Control Theory (linear systems, linearization, LQR)
 6. Nov 19, PN - Control Theory (linear systems, linearization, LQR)
 6. Nov 26, PN - Control Theory (linear systems, linearization, LQR)
-9. Dec 3, MW, PID
+9. Dec 3, MW, PID+VLA
 10. Dec 10, MC, State Estimation
 11. Dec 17, MC, Forward kinematics
 
