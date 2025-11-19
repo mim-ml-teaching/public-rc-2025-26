@@ -14,7 +14,7 @@ All programs must be runnable from the root of your submission archive using a `
 
 ## Submission format
 
-**The submission deadline is Nov 21 (Friday), 23:59 2025.**
+**The submission deadline is Nov 23 (Sunday), 23:59 2025.**
 
 You should submit via moodle. You should submit a zip or tgz file containing:
 
