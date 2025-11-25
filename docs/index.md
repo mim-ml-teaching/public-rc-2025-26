@@ -6,6 +6,7 @@
 * [lab4](lab4-public/lab4.md)
 * [lab6](lab6-public/lab6.md)
 * [lab7](lab7-public/lab7.md)
+* [lab8](lab8-public/lab8.md)
 
 # Homeworks
 
