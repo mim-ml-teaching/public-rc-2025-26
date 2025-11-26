@@ -13,7 +13,7 @@ Today’s lab contains two self-contained Colab intros.
 
 ## Neural Radiance Fields (NeRF)
 
-[Link to the colab notebook.](https://colab.research.google.com/drive/1TppdSsLz8uKoNwqJqDGg8se8BHQcvg_K?usp=sharing)
+[Link to the colab notebook.](https://colab.research.google.com/github/mim-ml-teaching/public-rc-2025-26/blob/refs/heads/main/docs/lab8-public/NeRF_From_Nothing.ipynb)
 
 A (non-comprehensive) list of questions you might want to ask yourself:
 
@@ -28,6 +28,6 @@ A (non-comprehensive) list of questions you might want to ask yourself:
 
 ## Kalman filter
 
-[Link to the colab notebook.](https://colab.research.google.com/drive/1XaFlJLMGwd9_0ZwDuyAhGD5yhMG7mzwV?usp=sharing)
+[Link to the colab notebook.](https://colab.research.google.com/github/mim-ml-teaching/public-rc-2025-26/blob/refs/heads/main/docs/lab8-public/RC_Filters_public.ipynb)
 
 We’ll build on the Kalman material and explore this topic further in the subsequent labs and lectures.
