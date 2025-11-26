@@ -15,6 +15,8 @@ Today’s lab contains two self-contained Colab intros.
 
 [Link to the colab notebook.](https://colab.research.google.com/github/mim-ml-teaching/public-rc-2025-26/blob/refs/heads/main/docs/lab8-public/NeRF_From_Nothing.ipynb)
 
+(The notebook was created by the authors of the Medium's article mentioned at the beginning of the notebook)
+
 A (non-comprehensive) list of questions you might want to ask yourself:
 
 1. Why does taking the last column of the rotation matrix give us the direction for a given view? (Origins and Directions section)
