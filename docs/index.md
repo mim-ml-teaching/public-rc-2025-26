@@ -4,13 +4,16 @@
 * [lab2](lab2-public/lab2.md)
 * [lab3](lab3-public/lab3.md)
 * [lab4](lab4-public/lab4.md)
+* [lab5](lab5-public/lab5.md) (also the first homework)
 * [lab6](lab6-public/lab6.md)
 * [lab7](lab7-public/lab7.md)
 * [lab8](lab8-public/lab8.md)
+* [lab9](lab9-public/lab9.md) (also the second homework)
 
 # Homeworks
 
-* [lab5 aka hw1](lab5-public/lab5.md)
+* [Homework 1](lab5-public/lab5.md) (also the 5th lab scenario)
+* [Homework 2](lab9-public/lab9.md) (also the 9th lab scenario)
 
 # Lectures
 
