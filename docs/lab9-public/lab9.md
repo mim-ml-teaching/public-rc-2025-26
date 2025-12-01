@@ -37,8 +37,8 @@ Code contains TODO markers intentionally left for you;
 only fill those sections in `pid.py` and `drone_control.py`.
 An example solution video is provided to illustrate acceptable tracking accuracy:
 
-<video width="512" controls>
-  <source src="example-solution-low-res.mov" type="video/quicktime">
+<video width="724" controls>
+  <source src="example-solution-low-res.mp4" type="video/quicktime">
   Your browser does not support the video tag.
 </video>
 
