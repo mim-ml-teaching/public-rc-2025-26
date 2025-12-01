@@ -62,6 +62,7 @@ the drone has to turn sensibly in the direction of flight.**
 Just flying through the gates with a fixed yaw angle is not sufficient.
 See the example video for reference.
 
+For the tasks with non-rotated gates, adjusting yaw angle is not required (but it's ok if you do it).
 
 
 ## Assets
