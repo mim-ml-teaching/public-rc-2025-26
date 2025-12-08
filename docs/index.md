@@ -9,6 +9,7 @@
 * [lab7](lab7-public/lab7.md)
 * [lab8](lab8-public/lab8.md)
 * [lab9](lab9-public/lab9.md) (also the second homework)
+* [lab10](lab10-public/lab10.md)
 
 # Homeworks
 
