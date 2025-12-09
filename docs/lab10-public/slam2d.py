@@ -1,6 +1,6 @@
 import numpy as np
-from slam_core.backend import SLAM2DBackend
-from slam_core.frontend import SLAM2DFrontend
+from slam_core.backend_2d import SLAM2DBackend
+from slam_core.frontend_2d import SLAM2DFrontend
 from slam_core.visualization import plot_results_2d
 
 

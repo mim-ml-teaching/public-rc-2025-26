@@ -52,6 +52,7 @@ def main():
         frontend.sensor_measurements,
         odometry_noise_std=odometry_noise,
         sensor_noise_std=sensor_noise,
+        ground_truth_initial_pose=frontend.initial_pose,    
     )
 
     # 3. Results
@@ -99,7 +100,6 @@ def main():
         true_poses=frontend.true_poses,
         true_landmarks=frontend.true_landmarks,
         odometry_measurements=frontend.odometry_measurements,
-        ground_truth_initial_pose=frontend.initial_pose,
         optimized_poses=optimized_poses,
         optimized_landmarks=optimized_landmarks,
         initial_pose=frontend.initial_pose,
