@@ -54,5 +54,5 @@ Lecture plan:
 
 ## Exams
 
-* [Old exams](archive/old-exams)
-* Solutions can be found on GitHub repository connected to this website in the `archive/old-exams-solutions` directory
+* [Old exams](old-exams)
+* Solutions can be found on GitHub repository connected to this website in the `old-exams-solutions` directory
