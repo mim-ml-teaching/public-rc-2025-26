@@ -1,0 +1,10 @@
+[project]
+name = "lab12-public"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "control>=0.10.2",
+    "imageio>=2.37.2",
+    "numpy>=2.2.6",
+    "opencv-python>=4.11.0.86",
+]
