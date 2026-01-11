@@ -112,9 +112,11 @@ def visualize(state):
     image = np.zeros((208, width, 3), np.uint8)
     cart_x = int(state["cart_position"] * 50) + width // 2
     angle = state["pole_angle"]  # in radians
+    pole_len = 100
     print(cart_x, angle)
-    pole_x = int(math.sin(angle) * 100) + cart_x
-    cv2.line(image, (cart_x, 150), (pole_x, 50), (255, 255, 255), 3)
+    pole_x = int(math.sin(angle) * pole_len) + cart_x
+    pole_y = -int(math.cos(angle) * pole_len) + 150
+    cv2.line(image, (cart_x, 150), (pole_x, pole_y), (255, 255, 255), 3)
     cv2.circle(image, (cart_x, 150), 6, (255, 255, 255), -1)
     cv2.imshow("pole", image)
     FRAMES.append(image)
