@@ -17,6 +17,7 @@
 
 * [Homework 1](lab5-public/lab5.md) (also the 5th lab scenario)
 * [Homework 2](lab9-public/lab9.md) (also the 9th lab scenario)
+* [Homework 3](hw3-public/index.md)
 
 # Lectures
 
