@@ -53,6 +53,7 @@ Lecture plan:
   *(Skip the “Waves” part and continue at “Manipulating Rays”)*
 * [Global Shutter vs Rolling Shutter](https://www.premiumbeat.com/blog/know-the-basics-of-global-shutter-vs-rolling-shutter/)
 * [Aperture, Gain (ISO), Exposure Time Triangle](https://www.cambridgeincolour.com/tutorials/camera-exposure.htm)
+* [Extra version of lab 6 implemented in Genesis](lab6-genesis-with-solutions/lab6-genesis/)
 
 
 ## Exams

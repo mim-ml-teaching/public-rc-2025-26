@@ -1,0 +1,24 @@
+
+<mujoco model="gripper_robot">
+  <option timestep="0.01" gravity="0 0 -9.81"/>
+  <compiler autolimits="true"/>
+  <worldbody>
+    <light name="top" pos="0 0 1"/>
+    <body name="gripper">
+       <inertial pos="0 0 0" mass="1.0" diaginertia="0.001 0.001 0.001"/>
+      <joint name="center_x" pos="0 0 0" damping="0.3" axis="1 0 0" type="slide" range="-5 5"/>
+      <joint name="center_y" pos="0 0 0" damping="0.3" axis="0 1 0" type="slide" range="-5 5"/>
+      <joint name="center_z" pos="0 0 0" damping="0.3" axis="0 0 1" type="slide" range="-5 5"/>
+      <geom size="0.1 0.05 0.01" type="box" rgba="0.356 0.361 0.376 1"/>
+
+      <geom type="capsule" fromto="0 0 0 0.2 0 0" size="0.01" rgba="1 0 0 1" contype="0" conaffinity="0"/>
+      <geom type="capsule" fromto="0 0 0 0 0.2 0" size="0.01" rgba="0 1 0 1" contype="0" conaffinity="0"/>
+      <geom type="capsule" fromto="0 0 0 0 0 0.2" size="0.01" rgba="0 0 1 1" contype="0" conaffinity="0"/>
+     </body>
+  </worldbody>
+  <actuator>
+    <position name="ac_x" joint="center_x" />
+    <position name="ac_y" joint="center_y" />
+    <position name="ac_z" joint="center_z" />
+  </actuator>
+</mujoco>
