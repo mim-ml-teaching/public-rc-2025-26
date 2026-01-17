@@ -2,6 +2,14 @@
 title: Robot Control - Homework 3 - 2025 / 26
 ---
 
+# Edits
+
+### 17.01.2026 
+- Turned off the gate movement in "flight" mode
+- Reduced the speed of the gates
+- Fixed issues with opening and closing renderer
+- Modified `pyproject.toml` to exclude python 3.14+
+
 # Problem Description
 
 In this homework, you will work with the same environment as the previous assignment.

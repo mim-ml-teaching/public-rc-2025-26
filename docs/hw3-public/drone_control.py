@@ -33,8 +33,8 @@ def camera_intrinsics_from_fovy(fovy_deg: float, height: int, width: int) -> np.
 
 def update_gate_position(model: mujoco.MjModel, data: mujoco.MjData, gate_name: str, gate_vel: np.ndarray, 
                          gate_motion_prob: float = 0.1,
-                         gate_motion_scale: float = 0.15, 
-                         gate_noise_scale: float = 0.01, 
+                         gate_motion_scale: float = 0.1, 
+                         gate_noise_scale: float = 0.005, 
                          gate_damping: float = 0.95,
                          sim_dt: Optional[float] = None) -> np.ndarray:
     """Update gate position with smooth motion dynamics."""
@@ -144,18 +144,20 @@ def run_single_task(*, wind: bool, rotated_gates: bool, flight_mode, rendering_f
     blue_gate_vel = np.zeros(3, dtype=float)
     # ---------------------------------------
 
+    renderer = None
     try:
+        renderer = mujoco.Renderer(model, resolution[0], resolution[1])
         for i in range(SIM_TIME):
             # ----- update smooth motion of all 3 gates -----
-            # Move red_gate along a square path
-            red_gate_vel = update_gate_position(model, data, "red_gate", red_gate_vel)
-            green_gate_vel = update_gate_position(model, data, "green_gate", green_gate_vel)
-            blue_gate_vel = update_gate_position(model, data, "blue_gate", blue_gate_vel)
+            # Move the gates only in "hover" mode
+            if flight_mode == "hover":
+                red_gate_vel = update_gate_position(model, data, "red_gate", red_gate_vel)
+                green_gate_vel = update_gate_position(model, data, "green_gate", green_gate_vel)
+                blue_gate_vel = update_gate_position(model, data, "blue_gate", blue_gate_vel)
             mujoco.mj_forward(model, data)
             # -----------------------------------------------
             
             # Render camera frame
-            renderer = mujoco.Renderer(model, resolution[0], resolution[1])
             renderer.update_scene(data, camera="front_camera")
             camera_frame = renderer.render()
             camera_frame = np.asarray(camera_frame, dtype=np.uint8)
@@ -200,7 +202,12 @@ def run_single_task(*, wind: bool, rotated_gates: bool, flight_mode, rendering_f
         print(f"Task ({task_label}) completed successfully!")
 
     finally:
-        # Ensure viewer is closed before the next run to avoid multiple open windows.
+        # Ensure renderer and viewer are closed before the next run to avoid multiple open windows.
+        if renderer is not None:
+            try:
+                renderer.close()
+            except Exception:
+                pass
         try:
             view.close()
         except Exception:
