@@ -1,10 +1,13 @@
-import numpy as np
-import pandas as pd
+import time
 import math
-import tyro
+
 import mujoco
 from mujoco import viewer
+import numpy as np
+import pandas as pd
 from scipy.spatial.transform import Rotation as R
+import tyro
+
 from drone_simulator import DroneSimulator
 from pid import PID
 
@@ -154,6 +157,7 @@ def run_single_task(*, wind: bool, rotated_gates: bool, rendering_freq: float, f
             view.close()
         except Exception:
             pass
+        time.sleep(0.2)  # Small delay to ensure proper cleanup
 
 
 def main(
